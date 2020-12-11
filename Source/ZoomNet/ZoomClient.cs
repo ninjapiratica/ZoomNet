@@ -80,6 +80,14 @@ namespace ZoomNet
 		public ICloudRecordings CloudRecordings { get; private set; }
 
 		/// <summary>
+		/// Gets the resource which allows you to manage groups under an account.
+		/// </summary>
+		/// <value>
+		/// The groups resource.
+		/// </value>
+		public IGroups Groups { get; private set; }
+
+		/// <summary>
 		/// Gets the resource which allows you to manage meetings.
 		/// </summary>
 		/// <value>
@@ -211,6 +219,7 @@ namespace ZoomNet
 			Accounts = new Accounts(_fluentClient);
 			Chat = new Chat(_fluentClient);
 			CloudRecordings = new CloudRecordings(_fluentClient);
+			Groups = new Groups(_fluentClient);
 			Meetings = new Meetings(_fluentClient);
 			PastMeetings = new PastMeetings(_fluentClient);
 			PastWebinars = new PastWebinars(_fluentClient);

@@ -32,6 +32,14 @@ namespace ZoomNet
 		ICloudRecordings CloudRecordings { get; }
 
 		/// <summary>
+		/// Gets the resource which allows you to manage groups under an account.
+		/// </summary>
+		/// <value>
+		/// The groups resource.
+		/// </value>
+		IGroups Groups { get; }
+
+		/// <summary>
 		/// Gets the resource which allows you to manage meetings.
 		/// </summary>
 		/// <value>
