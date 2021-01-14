@@ -56,6 +56,14 @@ namespace ZoomNet
 		IPastWebinars PastWebinars { get; }
 
 		/// <summary>
+		/// Gets the resource which allows you to manage roles.
+		/// </summary>
+		/// <value>
+		/// The roles resource.
+		/// </value>
+		IRoles Roles { get; }
+
+		/// <summary>
 		/// Gets the resource which allows you to manage users.
 		/// </summary>
 		/// <value>
