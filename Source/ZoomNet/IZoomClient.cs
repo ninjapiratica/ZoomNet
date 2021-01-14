@@ -56,6 +56,14 @@ namespace ZoomNet
 		IPastWebinars PastWebinars { get; }
 
 		/// <summary>
+		/// Gets the resource which allows you to manage rooms.
+		/// </summary>
+		/// <value>
+		/// The rooms resource.
+		/// </value>
+		IRooms Rooms { get; }
+
+		/// <summary>
 		/// Gets the resource which allows you to manage users.
 		/// </summary>
 		/// <value>
